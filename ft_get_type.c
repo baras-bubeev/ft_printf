@@ -6,11 +6,11 @@
 /*   By: mpowder <mpowder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 20:03:14 by mpowder           #+#    #+#             */
-/*   Updated: 2020/11/25 02:17:14 by mpowder          ###   ########.fr       */
+/*   Updated: 2020/11/25 03:51:38 by mpowder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libprintf.h"
+#include "libftprintf.h"
 
 int		ft_get_type(t_parse *prs, const char **s, va_list ap)
 {

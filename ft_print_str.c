@@ -6,11 +6,11 @@
 /*   By: mpowder <mpowder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 02:09:47 by mpowder           #+#    #+#             */
-/*   Updated: 2020/11/25 01:02:54 by mpowder          ###   ########.fr       */
+/*   Updated: 2020/11/25 03:51:51 by mpowder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libprintf.h"
+#include "libftprintf.h"
 
 int			ft_print_str(t_parse *prs, char *s)
 {

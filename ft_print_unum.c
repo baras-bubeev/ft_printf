@@ -6,13 +6,13 @@
 /*   By: mpowder <mpowder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 02:09:47 by mpowder           #+#    #+#             */
-/*   Updated: 2020/11/25 03:00:04 by mpowder          ###   ########.fr       */
+/*   Updated: 2020/11/25 03:51:54 by mpowder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libprintf.h"
+#include "libftprintf.h"
 
-static int	ft_print(unsigned int n, int base, char c)
+static int	ft_print(unsigned int n, unsigned int base, char c)
 {
 	static int	count;
 
@@ -37,7 +37,7 @@ static int	ft_sign(t_parse *prs)
 	return (count);
 }
 
-static int	ft_numlen(unsigned int n, int base)
+static int	ft_numlen(unsigned int n, unsigned int base)
 {
 	static int	count;
 
@@ -47,7 +47,7 @@ static int	ft_numlen(unsigned int n, int base)
 	return (count);
 }
 
-static int	ft_right(t_parse *prs, unsigned int n, int base, char c)
+static int	ft_right(t_parse *prs, unsigned int n, unsigned int base, char c)
 {
 	int	count;
 	int	len;
@@ -72,7 +72,8 @@ static int	ft_right(t_parse *prs, unsigned int n, int base, char c)
 	return (count);
 }
 
-int			ft_print_unum(t_parse *prs, unsigned int n, int base, char c)
+int			ft_print_unum(t_parse *prs, unsigned int n,
+			unsigned int base, char c)
 {
 	int	count;
 	int	len;

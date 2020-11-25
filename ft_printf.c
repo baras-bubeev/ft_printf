@@ -6,11 +6,11 @@
 /*   By: mpowder <mpowder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 21:24:41 by mpowder           #+#    #+#             */
-/*   Updated: 2020/11/25 02:14:42 by mpowder          ###   ########.fr       */
+/*   Updated: 2020/11/25 03:51:57 by mpowder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libprintf.h"
+#include "libftprintf.h"
 
 int		ft_printf(const char *format, ...)
 {

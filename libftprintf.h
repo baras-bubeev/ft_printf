@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libprintf.h                                        :+:      :+:    :+:   */
+/*   libftprintf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mpowder <mpowder@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 21:25:57 by mpowder           #+#    #+#             */
-/*   Updated: 2020/11/25 02:24:29 by mpowder          ###   ########.fr       */
+/*   Updated: 2020/11/25 03:52:18 by mpowder          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBPRINTF_H
-# define LIBPRINTF_H
+#ifndef LIBFTPRINTF_H
+# define LIBFTPRINTF_H
 
-#include<stdio.h> /*DELETE!!!*/
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
@@ -42,12 +41,12 @@ typedef struct		s_parse
 
 int					ft_strlen(const char *s);
 char				*ft_strchr(const char *s, int c);
-int					ft_printf(const char *, ...);
+int					ft_printf(const char *format, ...);
 int					ft_parsing(const char **s, va_list ap);
 int					ft_get_type(t_parse *prs, const char **s, va_list ap);
 int					ft_print_num(t_parse *prs, int n, int base);
 int					ft_print_unum(t_parse *prs, unsigned int n,
-					int base, char c);
+					unsigned int base, char c);
 int					ft_print_chr(t_parse *prs, int c);
 int					ft_print_str(t_parse *prs, char *s);
 int					ft_print_p(t_parse *prs, long int n, int base);

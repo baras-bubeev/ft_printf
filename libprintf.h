@@ -13,7 +13,6 @@
 #ifndef LIBPRINTF_H
 # define LIBPRINTF_H
 
-#include<stdio.h> /*DELETE!!!*/
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
